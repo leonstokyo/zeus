@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-admin/admin-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-admin/admin-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-chan/chan-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-chan/chan-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-chan/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-chan/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-exchange-engine/exchange-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-exchange-engine/exchange-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-exchange-engine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-exchange-engine/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-finance/finance-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-finance/finance-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-finance/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-finance/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-iaas/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-iaas/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-iaas/zeus-authorization/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-iaas/zeus-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-match-engine/match-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-match-engine/match-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-match-engine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-match-engine/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-member/member-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-member/member-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-member/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-member/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-statistics/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-statistics/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-statistics/statistics-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-statistics/statistics-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zeus-task/src/main/java" charset="UTF-8" />
+  </component>
+</project>
