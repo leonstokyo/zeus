@@ -12,8 +12,8 @@
     <artifactId>zeus-iaas</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>zeus-gateway</module>
-        <module>zeus-authorization</module>
+        <module>gateway-server</module>
+        <module>authorization-server</module>
     </modules>
 
     <properties>
