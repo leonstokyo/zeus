@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zeus-gateway" />
         <module name="statistics-service" />
         <module name="finance-service" />
         <module name="admin-api" />
@@ -18,11 +17,12 @@
         <module name="chan-service" />
         <module name="match-api" />
         <module name="exchange-api" />
+        <module name="authorization-server" />
         <module name="member-service" />
         <module name="chan-api" />
+        <module name="gateway-server" />
         <module name="member-api" />
         <module name="finance-api" />
-        <module name="zeus-authorization" />
         <module name="admin-service" />
       </profile>
     </annotationProcessing>
@@ -31,21 +31,21 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin-api" options="-parameters" />
       <module name="admin-service" options="-parameters" />
+      <module name="authorization-server" options="-parameters" />
       <module name="chan-api" options="-parameters" />
       <module name="chan-service" options="-parameters" />
       <module name="exchange-api" options="-parameters" />
       <module name="exchange-service" options="-parameters" />
       <module name="finance-api" options="-parameters" />
       <module name="finance-service" options="-parameters" />
+      <module name="gateway-server" options="-parameters" />
       <module name="match-api" options="-parameters" />
       <module name="match-service" options="-parameters" />
       <module name="member-api" options="-parameters" />
       <module name="member-service" options="-parameters" />
       <module name="statistics-api" options="-parameters" />
       <module name="statistics-service" options="-parameters" />
-      <module name="zeus-authorization" options="-parameters" />
       <module name="zeus-common" options="-parameters" />
-      <module name="zeus-gateway" options="-parameters" />
       <module name="zeus-task" options="-parameters" />
     </option>
   </component>

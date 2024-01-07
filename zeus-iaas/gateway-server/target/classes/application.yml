@@ -6,7 +6,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: nacos-server:8848 # 修改本机的host文件
+        server-addr: st.zeus.cn:8848/ # 修改本机的host文件
     gateway:
       discovery:
         locator:
@@ -18,7 +18,8 @@ spring:
           predicates:
             - Path=/admin/**
         - id: test_router
-          uri: https://www.baidu.com/
+          uri: https://www.aliyun.com/
           predicates:
-            - Path=/test
+            - Path=/product  # 转发url必须存在，由于不存在/test，这里用/
+
 
