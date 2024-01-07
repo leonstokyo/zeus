@@ -20,6 +20,15 @@ spring:
         - id: test_router
           uri: https://www.aliyun.com/
           predicates:
-            - Path=/product  # 转发url必须存在，由于不存在/test，这里用/
+            - Path=/product
+
+    sentinel:
+      datasource:
+        ds1.file:
+          file: classpath:gw-flow.json
+          ruleType: gw_flow
+        ds2.file:
+          file: classpath:api-group.json
+          ruleType: gw_api_group
 
 

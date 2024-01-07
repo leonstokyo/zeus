@@ -1,0 +1,10 @@
+[
+  {
+    "apiName": "admin-server-api",
+    "predicateItems": [
+      {
+        "pattern": "/admin/login"
+      }
+    ]
+  }
+]
