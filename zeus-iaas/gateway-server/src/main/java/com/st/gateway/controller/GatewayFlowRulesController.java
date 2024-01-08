@@ -1,4 +1,4 @@
-package com.st.controller;
+package com.st.gateway.controller;
 
 import com.alibaba.csp.sentinel.adapter.gateway.common.api.ApiDefinition;
 import com.alibaba.csp.sentinel.adapter.gateway.common.api.GatewayApiDefinitionManager;
