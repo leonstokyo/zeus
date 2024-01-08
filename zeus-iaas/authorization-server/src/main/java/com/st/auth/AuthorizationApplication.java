@@ -1,16 +1,15 @@
-package com.st;
+package com.st.auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @author leon
+ * @date 2024/1/8 11:03
  */
 @SpringBootApplication
-@EnableDiscoveryClient
-public class ZeusGatewayApplication {
+public class AuthorizationApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ZeusGatewayApplication.class, args);
+        SpringApplication.run(AuthorizationApplication.class, args);
     }
 }
