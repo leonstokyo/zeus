@@ -42,4 +42,9 @@ spring:
           dataId: api-group
           ruleType: gw_api_group
 
+  redis:
+    host: st.zeus.cn
+    port: 6379
+    password: 123456
+
 
