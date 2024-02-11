@@ -8,7 +8,4 @@ spring:
     nacos:
       discovery:
         server-addr: st.zeus.cn:8848
-  redis:
-    host: st.zeus.cn
-    port: 6379
-    password: 123456
+
