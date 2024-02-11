@@ -8,4 +8,8 @@ spring:
     nacos:
       discovery:
         server-addr: st.zeus.cn:8848
-
+  datasource:
+    url: jdbc:mysql://st.zeus.cn:3306/coin-exchange?useSSL=false
+    username: root
+    password: Dear@123456!
+    driver-class-name: com.mysql.cj.jdbc.Driver
