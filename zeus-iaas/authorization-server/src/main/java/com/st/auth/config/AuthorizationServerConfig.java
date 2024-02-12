@@ -29,7 +29,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Autowired
     private AuthenticationManager authenticationManager;
     @Autowired
-    @Qualifier("userDetailServiceImpl")
     private UserDetailsService userDetailsService;
 
     /**
