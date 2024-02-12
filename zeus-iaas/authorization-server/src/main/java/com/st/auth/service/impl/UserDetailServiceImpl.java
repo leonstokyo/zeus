@@ -17,9 +17,9 @@ import org.springframework.web.context.request.ServletRequestAttributes;
  * @author leon
  * @date 2024/2/12 00:54
  */
-@Service
+//@Service
 public class UserDetailServiceImpl implements UserDetailsService {
-    @Autowired
+    //@Autowired
     private JdbcTemplate jdbcTemplate;
 
     @Override

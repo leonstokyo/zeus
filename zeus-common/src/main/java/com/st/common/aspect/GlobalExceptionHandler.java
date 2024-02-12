@@ -3,7 +3,6 @@ package com.st.common.aspect;
 import com.baomidou.mybatisplus.extension.api.IErrorCode;
 import com.baomidou.mybatisplus.extension.exceptions.ApiException;
 import com.st.common.model.ResponseResult;
-import org.springframework.boot.context.properties.bind.BindResult;
 import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;

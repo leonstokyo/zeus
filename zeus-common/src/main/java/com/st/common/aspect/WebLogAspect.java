@@ -1,7 +1,9 @@
 package com.st.common.aspect;
 
+import com.alibaba.fastjson.JSON;
 import com.st.common.model.WebLog;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -27,6 +29,7 @@ import java.util.Map;
 @Component
 @Aspect
 @Order(1)
+@Slf4j
 public class WebLogAspect {
 
     /**
@@ -37,7 +40,7 @@ public class WebLogAspect {
     /**
      * 定义一个切点
      */
-    @Pointcut("execution(* com.st.controller.*.*(..))") // controller包里所有类，类里面所有方法
+    @Pointcut("execution(* com.st.common.controller.*.*(..))") // controller包里所有类，类里面所有方法
     public void webLog(){}
 
 
@@ -75,6 +78,7 @@ public class WebLogAspect {
         webLog.setMethod(targetClassName + "." + method.getName());
         webLog.setParameter(getMethodParameter(method, proceedingJoinPoint.getArgs())); //{"key": "value" :}
         webLog.setResult(result);
+        log.info("{}", JSON.toJSONString(webLog, true));
 
         return result;
     }
