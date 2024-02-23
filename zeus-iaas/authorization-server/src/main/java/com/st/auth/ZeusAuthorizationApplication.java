@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2024/1/8 11:03
  */
 @SpringBootApplication
-public class AuthorizationApplication {
+public class ZeusAuthorizationApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AuthorizationApplication.class, args);
+        SpringApplication.run(ZeusAuthorizationApplication.class, args);
     }
 }

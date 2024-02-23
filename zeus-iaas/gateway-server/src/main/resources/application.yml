@@ -44,7 +44,7 @@ spring:
 
   redis:
     host: st.zeus.cn
-    port: 6379
+    port: 6380
     password: 123456
 
 

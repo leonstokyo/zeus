@@ -1,6 +1,7 @@
 package com.st.common.config.resource;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -18,6 +19,7 @@ import org.springframework.util.FileCopyUtils;
  */
 @EnableResourceServer
 @EnableGlobalMethodSecurity(prePostEnabled = true)
+@Configuration
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Override
@@ -42,12 +44,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
         resources.tokenStore(jwtTokenStore());
     }
 
-
-
-    private TokenStore jwtTokenStore() {
-        return new JwtTokenStore(accessTokenConverter());
-    }
-
     @Bean
     public JwtAccessTokenConverter accessTokenConverter() {
         JwtAccessTokenConverter tokenConverter = new JwtAccessTokenConverter();
@@ -62,6 +58,10 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
         tokenConverter.setVerifierKey(s);
         return tokenConverter;
+    }
+
+    private TokenStore jwtTokenStore() {
+        return new JwtTokenStore(accessTokenConverter());
     }
 
 
