@@ -13,13 +13,13 @@ spring:
       transport:
         dashboard: st.zeus.cn:8858
   datasource:
-    url: jdbc:mysql://st.zeus.cn:3306/coin-exchange
+    url: jdbc:mysql://st.zeus.cn:3307/coin-exchange
     username: root
-    password: Dear@123456!
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
     host: st.zeus.cn
-    port: 6379
+    port: 6380
     password: 123456
 
 swagger2:

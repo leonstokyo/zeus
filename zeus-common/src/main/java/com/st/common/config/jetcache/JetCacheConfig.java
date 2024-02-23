@@ -10,6 +10,5 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableCreateCacheAnnotation
-@EnableMethodCache(basePackages = "com.st.service.impl")
 public class JetCacheConfig {
 }

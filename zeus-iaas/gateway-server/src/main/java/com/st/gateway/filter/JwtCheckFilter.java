@@ -34,9 +34,9 @@ public class JwtCheckFilter implements GlobalFilter, Ordered {
     /**
      *
      * 过滤器拦截到用户的请求后干什么
-     * @param exchange
-     * @param chain
-     * @return
+     * @param exchange exchange
+     * @param chain chain
+     * @return Mono<Void>
      */
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
@@ -59,7 +59,7 @@ public class JwtCheckFilter implements GlobalFilter, Ordered {
 
     /**
      * 给用户响应一个没有token的错误
-     * @return
+     * @return Mono<Void>
      */
     private Mono<Void> buildNoAuthorizationResult(ServerWebExchange exchange) {
         ServerHttpResponse response = exchange.getResponse();
