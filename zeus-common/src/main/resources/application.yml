@@ -1,59 +1,59 @@
-server:
-  port: 8080
-spring:
-  application:
-    name: zeus-common
-  cloud:
-    nacos:
-      discovery:
-        server-addr: st.zeus.cn:8848
-      config:
-        enabled: false
-    sentinel:
-      transport:
-        dashboard: st.zeus.cn:8858
-  datasource:
-    url: jdbc:mysql://st.zeus.cn:3307/coin-exchange
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  redis:
-    host: st.zeus.cn
-    port: 6380
-    password: 123456
-
-swagger2:
-  base-package: com.st.common.controller
-  name: leon
-  url: https://github.com/leonseki
-  email: leon.seki.tokyo@gmail.com
-  description: zeus-common
-  title: zeus-common测试
-  version: 2.0
-  terms-of-service-url: https://github.com/Leon-Study-Demo
-
-mybatis-plus:
-  mapper-locations: classpath:/mapper/*.xml
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-
-jetcache:
-  statIntervalMinutes: 15
-  areaInCacheName: false
-  local:
-    default:
-      type: linkedhashmap
-      keyConvertor: fastjson #其他可选：fastjson/jackson
-  remote:
-    default:
-      type: redis
-      keyConvertor: fastjson #其他可选：fastjson/jackson
-      valueEncoder: kryo #其他可选：kryo/kryo5
-      valueDecoder: kryo #其他可选：kryo/kryo5
-      poolConfig:
-        minIdle: 5
-        maxIdle: 20
-        maxTotal: 50
-      host: ${spring.redis.host}
-      port: ${spring.redis.port}
-      password: ${spring.redis.password}
+#server:
+#  port: 8080
+#spring:
+#  application:
+#    name: zeus-common
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: st.zeus.cn:8848
+#      config:
+#        enabled: false
+#    sentinel:
+#      transport:
+#        dashboard: st.zeus.cn:8858
+#  datasource:
+#    url: jdbc:mysql://st.zeus.cn:3307/coin-exchange
+#    username: root
+#    password: 123456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  redis:
+#    host: st.zeus.cn
+#    port: 6380
+#    password: 123456
+#
+#swagger2:
+#  base-package: com.st.common.controller
+#  name: leon
+#  url: https://github.com/leonseki
+#  email: leon.seki.tokyo@gmail.com
+#  description: zeus-common
+#  title: zeus-common测试
+#  version: 2.0
+#  terms-of-service-url: https://github.com/Leon-Study-Demo
+#
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#
+#jetcache:
+#  statIntervalMinutes: 15
+#  areaInCacheName: false
+#  local:
+#    default:
+#      type: linkedhashmap
+#      keyConvertor: fastjson #其他可选：fastjson/jackson
+#  remote:
+#    default:
+#      type: redis
+#      keyConvertor: fastjson #其他可选：fastjson/jackson
+#      valueEncoder: kryo #其他可选：kryo/kryo5
+#      valueDecoder: kryo #其他可选：kryo/kryo5
+#      poolConfig:
+#        minIdle: 5
+#        maxIdle: 20
+#        maxTotal: 50
+#      host: ${spring.redis.host}
+#      port: ${spring.redis.port}
+#      password: ${spring.redis.password}

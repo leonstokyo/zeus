@@ -32,7 +32,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                         "/swagger-resources/configuration/ui",
                         "/swagger-resources",
                         "/swagger-resources/configuration/security",
-                        "webjars/",
+                        "/webjars/**",
                         "/swagger-ui.html"
                         ).permitAll()
                 .antMatchers("/**").authenticated()
