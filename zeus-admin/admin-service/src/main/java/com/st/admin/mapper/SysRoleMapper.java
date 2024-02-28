@@ -9,4 +9,5 @@ import com.st.admin.domain.SysRole;
  * @date 2024/2/24 01:06   
  */
 public interface SysRoleMapper extends BaseMapper<SysRole> {
+    String getUserRoleCode(Long userId);
 }

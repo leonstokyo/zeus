@@ -9,5 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface SysRoleService extends IService<SysRole>{
 
-
+    /**
+     * 判断一个用户是否是超级管理员
+     */
+    boolean isSuperAdmin(Long userId);
 }
