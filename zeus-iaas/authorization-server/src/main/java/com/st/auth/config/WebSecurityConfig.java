@@ -29,18 +29,18 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     @Bean
-    protected AuthenticationManager authenticationManager() throws Exception {
+    public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManager();
     }
 
-    @Override
-    @Bean
-    public UserDetailsService userDetailsService() {
-        InMemoryUserDetailsManager inMemoryUserDetailsManager = new InMemoryUserDetailsManager();
-        User user = new User("admin", "123456", Arrays.asList(new SimpleGrantedAuthority("Role_Admin")));
-        inMemoryUserDetailsManager.createUser(user);
-        return inMemoryUserDetailsManager;
-    }
+//    @Override
+//    @Bean("userDetailsService")
+//    public UserDetailsService userDetailsService() {
+//        InMemoryUserDetailsManager inMemoryUserDetailsManager = new InMemoryUserDetailsManager();
+//        User user = new User("admin", "123456", Arrays.asList(new SimpleGrantedAuthority("Role_Admin")));
+//        inMemoryUserDetailsManager.createUser(user);
+//        return inMemoryUserDetailsManager;
+//    }
 
     @Bean
     public PasswordEncoder passwordEncoder() {

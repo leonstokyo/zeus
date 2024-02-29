@@ -68,9 +68,9 @@ public class UserDetailsServiceImpl implements UserDetailsService {
      */
     private UserDetails loadAdminUserByUsername(String username) {
         // 1. 使用用户名查询用户
-        jdbcTemplate.queryForObject(LoginConstant.QUERY_ADMIN_SQL, new RowMapper<User>() {
+        return jdbcTemplate.queryForObject(LoginConstant.QUERY_ADMIN_SQL, new RowMapper<User>() {
             @Override
-            public User mapRow(@NonNull  ResultSet resultSet, int i) throws SQLException {
+            public User mapRow(@NonNull ResultSet resultSet, int i) throws SQLException {
                 if (resultSet.wasNull()) {
                     throw new UsernameNotFoundException("用户名" + username + "不存在");
                 }
@@ -90,7 +90,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
                 );
             }
         }, username);
-        return null;
     }
 
 
