@@ -1,5 +1,6 @@
 package com.st.common.config.resource;
 
+import java.nio.charset.StandardCharsets;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
@@ -28,7 +29,9 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .disable()
                 .sessionManagement().disable()
                 .authorizeRequests()
-                .antMatchers("/v2/api-docs",
+                .antMatchers(
+                        "/login",
+                        "/v2/api-docs",
                         "/swagger-resources/configuration/ui",
                         "/swagger-resources",
                         "/swagger-resources/configuration/security",
@@ -51,7 +54,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
         try {
             ClassPathResource classPathResource = new ClassPathResource("coinexchange.pub");
             byte[] bytes = FileCopyUtils.copyToByteArray(classPathResource.getInputStream());
-            s = new String(bytes, "UTF-8");
+            s = new String(bytes, StandardCharsets.UTF_8);
         } catch (Exception e) {
             e.printStackTrace();
         }

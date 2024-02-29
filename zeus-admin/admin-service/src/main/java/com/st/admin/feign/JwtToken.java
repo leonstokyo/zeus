@@ -19,7 +19,7 @@ public class JwtToken {
     /**
      * token类型
      */
-    @JsonProperty("access_type")
+    @JsonProperty("token_type")
     private String tokenType;
 
     /**
