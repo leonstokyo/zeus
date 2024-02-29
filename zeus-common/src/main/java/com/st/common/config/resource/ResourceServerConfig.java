@@ -30,7 +30,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .sessionManagement().disable()
                 .authorizeRequests()
                 .antMatchers(
-                        "/login",
                         "/v2/api-docs",
                         "/swagger-resources/configuration/ui",
                         "/swagger-resources",

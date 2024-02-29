@@ -17,6 +17,8 @@ spring:
           uri: lb://admin-service
           predicates:
             - Path=/admin/**
+          filters:
+            - StripPrefix=1 # 当前端访问 /admin/login -> login 将admin自动去掉
         - id: test_router
           uri: https://www.aliyun.com/
           predicates:
@@ -44,7 +46,7 @@ spring:
 
   redis:
     host: st.zeus.cn
-    port: 6379
+    port: 6380
     password: 123456
 
 
