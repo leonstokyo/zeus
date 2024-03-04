@@ -1,4 +1,4 @@
-package com.st;
+package com.st.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
